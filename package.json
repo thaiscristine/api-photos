@@ -1,0 +1,30 @@
+{
+  "name": "api-photos",
+  "version": "1.0.0",
+  "description": "crud for image and category",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --quiet app.js",
+    "test": "mocha test/e2e/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thaiscristine/api-photos.git"
+  },
+  "author": "Thais Cristine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaiscristine/api-photos/issues"
+  },
+  "homepage": "https://github.com/thaiscristine/api-photos",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-things": "^0.2.0",
+    "mocha": "^2.3.4",
+    "supertest": "^1.1.0"
+  }
+}
