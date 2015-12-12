@@ -5,15 +5,15 @@ let router = new Router();
 let controllers = require('../controllers/index.js');
 
 router
-	.route('/users')  // caminho na url (lembrando que existe um prefixo na app.js)
-	.get(controllers.users.list) // listar todos os usuarios
-	.post(controllers.users.create); // cadastrar os usuarios
+	.route('/photos')  // caminho na url (lembrando que existe um prefixo na app.js)
+	.get(controllers.photos.list) // listar todos os usuarios
+	.post(controllers.photos.create); // cadastrar os usuarios
 
 router
-	.route('/users/:id') // usuario unico
-	.get(controllers.users.get) // pegar os dados (getSingle)
-	.put(controllers.users.update) //  atualizar os dados (updateSingle)
-	.delete(controllers.users.del); // deletar (deleteSingle)*/
+	.route('/photos/:id') // usuario unico
+	.get(controllers.photos.get) // pegar os dados (getSingle)
+	.put(controllers.photos.update) //  atualizar os dados (updateSingle)
+	.delete(controllers.photos.del); // deletar (deleteSingle)*/
 
 module.exports = router;
 

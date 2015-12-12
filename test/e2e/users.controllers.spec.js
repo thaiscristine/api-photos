@@ -6,11 +6,11 @@ var chai = require('chai');
 chai.use(require('chai-things')); // usando chai como variavel
 var expect = chai.expect;
 
-describe('Users controller', function(){
-	describe('.list - GET /users', function(){
+describe('Photos controller', function(){
+	describe('.list - GET /photos', function(){
 		it('should return a json array', function(done){ // done como argumento do it
 			 request(app)
-				.get('/api/users') // caminho setado no app
+				.get('/api/photos') // caminho setado no app
 				.end(function(err, res){
 					console.log(res.body);
 
@@ -23,10 +23,10 @@ describe('Users controller', function(){
 		});
 	});
 
-	describe('.create - POST /users', function(){
+	describe('.create - POST /photos', function(){
 		it('should send a json object', function(done){
 			request(app)
-				.post('/api/users') // 
+				.post('/api/photos') // 
 				.end(function(err, res){
 					expect(res.statusCode).to.be.equal(201); // http criado
 					expect(res.body).to.be.an('object');

@@ -19,7 +19,7 @@
   "homepage": "https://github.com/thaiscristine/api-photos",
   "dependencies": {
     "express": "^4.13.3",
-    "mongoose": "^4.3.0"
+    "mongoose": "^4.3.1"
   },
   "devDependencies": {
     "chai": "^3.4.1",
